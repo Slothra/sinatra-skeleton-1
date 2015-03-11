@@ -1,1 +1,108 @@
-<h1>Home Page</h1>
+<h1>Contact List</h1>
+<div class="container">
+	<ul>
+		<li>
+			<form action = "/contacts" method="POST" id="new">
+				<div>
+					<input id="firstname" placeholder="First Name"/>
+					<input id="lastname" placeholder="Last Name"/>
+					<input id="email" placeholder="Email"/>
+					<button id="submit">
+						Submit
+					</button>
+				</div>
+			</form>
+			<button class="display">
+				Create new contact
+			</button>
+		</li>
+		<li>
+			<form action = "/contacts/:id" method="POST" id="update">
+				<div>
+					<input id="update-id" placeholder="Enter ID">
+					<input id="update-firstname" placeholder="First Name"/>
+					<input id="update-lastname" placeholder="Last Name"/>
+					<input id="update-email" placeholder="Email"/>
+					<button id="submit-update">
+						Submit
+					</button>
+				</div>
+			</form>
+			<button class="display">
+				Update existing contact
+			</button>
+		</li>
+		<li>
+			<form action = "/contacts/:id" method="GET">
+				<div>
+					<input id="find-by-id" placeholder="Enter ID">
+					<p id="foundContact">
+					</p>
+				</div>
+			</form>
+			<button class="display">
+				Find by id
+			</button>
+		</li>
+		<li>
+			<form id="all">
+				<div class = "list">
+				</div>
+			</form>
+			<button class="display">
+				Show all contacts
+			</button>
+		</li>
+	</ul>
+
+	<!-- <form action = "/contacts" method="POST">
+		<label>
+			Please enter a command:
+		<input id="command"/> 
+		</label>
+		<button id="submit">
+			Submit
+		</button>
+		<div class="search">
+			<input id="find"/>
+			<label>
+				Please enter search term:
+			</label>
+			<input id="find"/>
+			<label>
+				Please enter id:
+			</label>
+			<input id="find-id"/>
+		</div>
+	</form> -->
+	
+<!-- 	<form action = "/contacts" method="POST" id="new">
+		<div>
+			<input id="firstname" placeholder="First Name"/>
+			<input id="lastname" placeholder="Last Name"/>
+			<input id="email" placeholder="Email"/>
+			<button id="submit">
+				Submit
+			</button>
+		</div>
+	</form> -->
+	<!-- <form action = "/contacts" method="GET" id="all">
+		<div class = "list">
+
+		</div>
+	</form> -->
+
+
+<!-- 	<p>
+		Please enter one of the following commands:
+		<ul>
+			<li>new     - create a new contact</li>
+			<li>find    - find a contact or contacts</li>
+			<li>list    - list all contacts</li>
+			<li>id      - search for an id</li>
+			<li>update  - update an id</li>
+			<li>delete  - deletes an entry</li>
+			<li>quit    - exits program</li>
+		</ul>
+	</p> -->
+</div>

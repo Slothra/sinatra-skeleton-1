@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'dotenv'
+require 'pg'
 
 require 'active_support/all'
 
@@ -11,6 +13,9 @@ require 'pry'
 
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
+
+# Load ENV
+Dotenv.load
 
 # Sinatra configuration
 configure do

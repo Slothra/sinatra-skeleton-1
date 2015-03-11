@@ -1,0 +1,15 @@
+.new {
+	/*display: none;*/
+}
+
+.search {
+	/*display: none;*/
+}
+
+.visible {
+	display: inline;
+}
+
+form {
+	display: none;
+}
